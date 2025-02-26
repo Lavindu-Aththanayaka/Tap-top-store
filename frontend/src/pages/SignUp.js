@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import loginIcons from '../assest/signin.gif'
+import LoginIcon from '../New folder/lock_9164513.png'
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { Link, useNavigate } from 'react-router-dom';
@@ -79,15 +79,15 @@ const SignUp = () => {
     <section id='signup'>
         <div className='mx-auto container p-4'>
 
-            <div className='bg-white p-5 w-full max-w-sm mx-auto'>
+            <div className='bg-custom-dark-or p-5 w-full max-w-sm mx-auto'>
 
                     <div className='w-20 h-20 mx-auto relative overflow-hidden rounded-full'>
                         <div>
-                            <img src={data.profilePic || loginIcons} alt='login icons'/>
+                            <img src={data.profilePic || LoginIcon} alt='login icons'/>
                         </div>
                         <form>
                           <label>
-                            <div className='text-xs bg-opacity-80 bg-slate-200 pb-4 pt-2 cursor-pointer text-center absolute bottom-0 w-full'>
+                            <div className='text-xs bg-opacity-80 bg-custom-dark-ora pb-4 pt-2 cursor-pointer text-center absolute bottom-0 w-full'>
                               Upload  Photo
                             </div>
                             <input type='file' className='hidden' onChange={handleUploadPic}/>
@@ -97,8 +97,8 @@ const SignUp = () => {
 
                     <form className='pt-6 flex flex-col gap-2' onSubmit={handleSubmit}>
                       <div className='grid'>
-                              <label>Name : </label>
-                              <div className='bg-slate-100 p-2'>
+                              <label className='text-custom-dark-orange'>Name : </label>
+                              <div className='bg-custom-dark-ora p-2'>
                                   <input 
                                       type='text' 
                                       placeholder='enter your name' 
@@ -110,8 +110,8 @@ const SignUp = () => {
                               </div>
                           </div>
                         <div className='grid'>
-                            <label>Email : </label>
-                            <div className='bg-slate-100 p-2'>
+                            <label className='text-custom-dark-orange'>Email : </label>
+                            <div className='bg-custom-dark-ora p-2'>
                                 <input 
                                     type='email' 
                                     placeholder='enter email' 
@@ -124,8 +124,8 @@ const SignUp = () => {
                         </div>
 
                         <div>
-                            <label>Password : </label>
-                            <div className='bg-slate-100 p-2 flex'>
+                            <label className='text-custom-dark-orange'>Password : </label>
+                            <div className='bg-custom-dark-ora p-2 flex'>
                                 <input 
                                     type={showPassword ? "text" : "password"} 
                                     placeholder='enter password'
@@ -138,11 +138,11 @@ const SignUp = () => {
                                     <span>
                                         {
                                             showPassword ? (
-                                                <FaEyeSlash/>
+                                                <FaEyeSlash className='text-custom-dark-or'/>
                                             )
                                             :
                                             (
-                                                <FaEye/>
+                                                <FaEye className='text-custom-dark-or'/>
                                             )
                                         }
                                     </span>
@@ -151,8 +151,8 @@ const SignUp = () => {
                         </div>
 
                         <div>
-                            <label>Confirm Password : </label>
-                            <div className='bg-slate-100 p-2 flex'>
+                            <label className='text-custom-dark-orange'>Confirm Password : </label>
+                            <div className='bg-custom-dark-ora p-2 flex'>
                                 <input 
                                     type={showConfirmPassword ? "text" : "password"} 
                                     placeholder='enter confirm password'
@@ -166,11 +166,11 @@ const SignUp = () => {
                                     <span>
                                         {
                                             showConfirmPassword ? (
-                                                <FaEyeSlash/>
+                                                <FaEyeSlash className='text-custom-dark-or'/>
                                             )
                                             :
                                             (
-                                                <FaEye/>
+                                                <FaEye className='text-custom-dark-or'/>
                                             )
                                         }
                                     </span>
@@ -178,11 +178,11 @@ const SignUp = () => {
                             </div>
                         </div>
 
-                        <button className='bg-red-600 hover:bg-red-700 text-white px-6 py-2 w-full max-w-[150px] rounded-full hover:scale-110 transition-all mx-auto block mt-6'>Sign Up</button>
+                        <button className='bg-custom-dark-orange hover:bg-orange-700 text-black px-6 py-2 w-full max-w-[150px] rounded-full hover:scale-110 transition-all mx-auto block mt-6'>Sign Up</button>
 
                     </form>
 
-                    <p className='my-5'>Already have account ? <Link to={"/login"} className=' text-red-600 hover:text-red-700 hover:underline'>Login</Link></p>
+                    <p className='my-5'>Already have account ? <Link to={"/login"} className=' text-orange-500 hover:text-orange-700 hover:underline'>Login</Link></p>
             </div>
 
 

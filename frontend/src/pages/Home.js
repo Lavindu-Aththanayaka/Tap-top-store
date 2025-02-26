@@ -10,17 +10,17 @@ const Home = () => {
       <CategoryList/>
       <BannerProduct/>
 
-      <HorizontalCardProduct category={"airpodes"} heading={"Top's Airpodes"}/>
-      <HorizontalCardProduct category={"watches"} heading={"Popular's Watches"}/>
+      <HorizontalCardProduct category={"HP"} heading={"HP"}/>
+      <HorizontalCardProduct category={"APPLE"} heading={"APPLE"}/>
 
-      <VerticalCardProduct category={"mobiles"} heading={"Mobiles"}/>
-      <VerticalCardProduct category={"Mouse"} heading={"Mouse"}/>
-      <VerticalCardProduct category={"televisions"} heading={"Televisions"}/>
-      <VerticalCardProduct category={"camera"} heading={"Camera & Photography"}/>
-      <VerticalCardProduct category={"earphones"} heading={"Wired Earphones"}/>
-      <VerticalCardProduct category={"speakers"} heading={"Bluetooth Speakers"}/>
-      <VerticalCardProduct category={"refrigerator"} heading={"Refrigerator"}/>
-      <VerticalCardProduct category={"trimmers"} heading={"Trimmers"}/>
+      <VerticalCardProduct category={"MSI"} heading={"MSI"}/>
+      <VerticalCardProduct category={"LENOVO"} heading={"LENOVO"}/>
+      <VerticalCardProduct category={"DELL"} heading={"DELL"}/>
+      <VerticalCardProduct category={"ACER"} heading={"ACER"}/>
+      <VerticalCardProduct category={"ACER ASPIRE GO 15"} heading={"ACER ASPIRE GO 15"}/>
+      <VerticalCardProduct category={"MICROSOFT SURFACE LAPTOP"} heading={"MICROSOFT SURFACE LAPTOP"}/>
+      <VerticalCardProduct category={"DELL XPS 13 (2024)"} heading={"DELL XPS 13 (2024)"}/>
+      <VerticalCardProduct category={"SAMSUNG GALAXY BOOK4"} heading={"SAMSUNG GALAXY BOOK4"}/>
     </div>
   )
 }
